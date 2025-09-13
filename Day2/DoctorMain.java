@@ -5,6 +5,7 @@ public class DoctorMain {
         doctor = new Doctor("john");
         System.out.println(doctor);
 
+
         // Inheritance is a relationship, Reusability
     }
 }
