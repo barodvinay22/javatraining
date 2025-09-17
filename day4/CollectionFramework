@@ -1,0 +1,9 @@
+A unified architecture for storing and manipulating groups of object .
+
+Provides Interfaces, implementation(classes).
+
+Array--> Sequential memory location int[] a = new int[10]
+LinkedList--> Nodes
+Queue--> First in first out
+Stack--> Last in first out
+Set--> Non duplicate elements

@@ -19,4 +19,16 @@ public class Employee{
     public String toString() {// toString method Object
        return "Employee Id= "+id+" Name = "+name+" Salary="+salary;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj==this){
+            return true;
+        }
+        Employee e=(Employee)obj;
+        if(this.id==e.id && this.name.equals(e.name) && this.salary.equals(e.salary)) {
+            return true;
+        }
+        return super.equals(obj);
+    }
 }
