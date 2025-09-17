@@ -11,6 +11,6 @@ public class SwapNum {
         a = a+b;
         b = a-b;
         a = a-b;
-        System.out.println("After Swap:  First number: " + a + 20" & " + "Second number: "+ b );
+        System.out.println("After Swap:  First number: " + a + " & " + "Second number: "+ b );
     }
 }
