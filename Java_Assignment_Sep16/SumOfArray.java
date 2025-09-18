@@ -1,3 +1,4 @@
+package Java_Assignment_Sep16;
 import java.util.Scanner;
 
 public class SumOfArray {

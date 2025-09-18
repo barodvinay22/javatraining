@@ -1,3 +1,4 @@
+package Java_Assignment_Sep16;
 public class SwapWithThirdVar {
     public static void main(String[] args) {
         // Check if two arguments are provided
