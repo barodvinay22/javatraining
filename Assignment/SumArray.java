@@ -5,9 +5,9 @@ public class SumArray {
 
         int sum = 0;
         int[] arr = new int[10];
+        Scanner sc = new Scanner(System.in);
         for(int i = 0 ; i < 10 ; i++){
             System.out.println("Enter number: ");
-            Scanner sc = new Scanner(System.in);
             arr[i] = sc.nextInt();
             sum = sum + arr[i];
         }

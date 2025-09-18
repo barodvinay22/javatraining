@@ -1,13 +1,13 @@
 public class StudentMain {
     public static void main(String[] args) {
-        Student s1=new Student();
+        StudentSayan s1=new StudentSayan();
         s1.setRollNumber(101);
         s1.setName("Rahul");
         System.out.println(s1);
-        Student s2=new Student();
+        StudentSayan s2=new StudentSayan();
         s2.setRollNumber(101);
         s2.setName("Kunal");
-        Student s3=s1;
+        StudentSayan s3=s1;
         if(s1== s2){
             System.out.println("Reference is equals");
         }else{
