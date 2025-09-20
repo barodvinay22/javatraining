@@ -29,10 +29,31 @@ add(1,2)
 add(1,2,3)
 add(1,2,3,4)
 
+Serializable
+    * Create a class User(id, name , address , password)
+    Write a code to save user object into the file and retrive the user object from the file make sure password should not be saved inside file.
+
+Collections
+    * Create a class country (code and name)
+        Inside main class create a list of country and sort based on code and name
+    *
+
+
 
 // Interface and Abstract class difference
+Abstract--> can have constructor
+any type of variable 
+Interface--> can't have constructor
+All the variables in Interface are by default public static final variables
+
 // Marker Interface (example), Functional Interface(example)
+
+Marker interface is an interface that don't have any methods inside them, they just instruct the compiler to do some special task.
+Example Serializable ,cloneable 
+
 // Comparator and comparable interface
+Functional Interface(example)--> exactly one abstract method (runnable, comparator)
+@FuntionalInterface 
 
 Exception --> 
                             
@@ -96,5 +117,5 @@ Set--> collection of unique object
 * Some implementation maintain order , other's don't
 
 
-Equals and Hashcode method:
+*Equals and Hashcode method:()
 
