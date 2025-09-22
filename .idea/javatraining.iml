@@ -9,6 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/day4" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Assignment" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MarkerInteface" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FunctionalInterface" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AssignCollections" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AssignSeriazable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ComparableNComparator" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -17,7 +17,7 @@ public class Employee{
 
     @Override
     public String toString() {// toString method Object
-       return "Employee Id= "+id+" Name = "+name+" Salary="+salary;
+        return "Employee Id= "+id+" Name = "+name+" Salary="+salary;
     }
 
     @Override
