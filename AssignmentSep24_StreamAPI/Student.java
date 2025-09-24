@@ -1,9 +1,8 @@
-package AssignmentSep22;
+package AssignmentSep24_StreamAPI;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Student class with overridden equals and hashCode for Set
 class Student {
     int rollNo;
     String name;
@@ -17,13 +16,12 @@ class Student {
         this.marks = marks;
     }
 
-    // Override equals and hashCode based on rollNo
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Student)) return false;
-        Student student = (Student) o;
-        return rollNo == student.rollNo;
+        Student other = (Student) o;
+        return this.rollNo == other.rollNo;
     }
 
     @Override
@@ -33,9 +31,10 @@ class Student {
 
     @Override
     public String toString() {
-        return "RollNo=" + rollNo +
-                ", Name='" + name + '\'' +
-                ", Course='" + course + '\'' +
-                ", Marks=" + marks ;
+        return rollNo + ", " + name + ", " + course + ", " + marks;
+    }
+
+    public int getMarks() {
+        return marks;
     }
 }

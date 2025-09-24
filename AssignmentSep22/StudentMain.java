@@ -3,7 +3,7 @@ package AssignmentSep22;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class StudentManager {
+public class StudentMain {
     public static void main(String[] args) {
 
         // Step 1: Store students in a List
@@ -21,7 +21,7 @@ public class StudentManager {
         List<Student> sortedStudents = new ArrayList<>(studentSet);
         sortedStudents.sort((s1, s2) -> Integer.compare(s2.marks, s1.marks));
 
-        System.out.println("=== Sorted Students by Marks (Highest First) ===");
+        System.out.println("\nSorted Students by Marks (Highest First)");
         for (Student s : sortedStudents) {
             System.out.println(s);
         }
@@ -30,7 +30,7 @@ public class StudentManager {
         Map<String, List<Student>> courseGroups = sortedStudents.stream()
                 .collect(Collectors.groupingBy(s -> s.course));
 
-        System.out.println("\n=== Students Grouped by Course ===");
+        System.out.println("\nStudents Grouped by Course");
         for (String course : courseGroups.keySet()) {
             System.out.println("Course: " + course);
             for (Student s : courseGroups.get(course)) {
@@ -39,7 +39,7 @@ public class StudentManager {
         }
 
         // Step 5: Display names of students with marks > 75
-        System.out.println("\n=== Students with Marks > 75 ===");
+        System.out.println("\nStudents with Marks > 75");
         sortedStudents.stream()
                 .filter(s -> s.marks > 75)
                 .map(s -> s.name)
