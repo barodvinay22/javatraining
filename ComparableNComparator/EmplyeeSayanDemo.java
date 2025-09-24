@@ -50,3 +50,8 @@ public class EmplyeeSayanDemo implements Comparable<EmplyeeSayanDemo>{
         return this.empId - emplyeeSayanDemo.empId;
     }
 }
+
+//this line indicates return this.empId - emplyeeSayanDemo.empId; 0 /-1 /1. It is comparing ids.
+//if 0 then both empid are same
+//if -1 then this.empId is greater
+//if 1 then this.empId is lesser
