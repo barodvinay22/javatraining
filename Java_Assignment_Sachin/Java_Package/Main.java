@@ -1,5 +1,4 @@
-package Java_Assignment_Sachin;
-
+package Java_Package ;
 class Student {
     int rollNo;
     String name;
