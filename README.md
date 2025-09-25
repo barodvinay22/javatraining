@@ -38,6 +38,21 @@ Collections
         Inside main class create a list of country and sort based on code and name
     *
 
+Write a java program to manage student records using the collection framework
+Student(rollNumber, name,course,marks)
+The program should:
+1. Store students in a list.
+2. Remove duplicates using a Set( student with same rollNumber are considered as duplicate)
+3. Display all the students sorted by marks(highest first).
+4. Group the students by course using a Map<String, List<Student>>.
+5. Display the names of student who scored more than 75.
+
+Student Data:
+101, "Alice","Bio",85
+102,"Bob","Phy",65
+103,"Charles","Bio",95
+104,"David","Che",85
+101,"Kim","Bio",90
 
 
 // Interface and Abstract class difference
@@ -117,5 +132,28 @@ Set--> collection of unique object
 * Some implementation maintain order , other's don't
 
 
-*Equals and Hashcode method:()
+*Equals and Hashcode method:
+
+
+equals() Method :
+* Defined in Object class
+* Used to check if two objects are logically equal.
+* Default implementation in object compares memory reference(==).
+
+hashcode() Method:
+* Also Defined in object.
+* Return an int value (the has code of the object).
+* Used by hash based collection(HashMap,HashSet,LinkedSet) to decide the bucked where the object is saved.
+
+Contract Between equals and hashcode:
+* if a.equals(b) --> then a.hasCode() == b.hasCode() must be true
+* if a.hasCode() == b.hashCode() --> a.equals(b) may or may not true.
+* If you override equals(). always override hashCode().
+
+Map(Interface)
+                        Map(Interface)
+                HashMap         LinkedHashMap       TreeMap
+    1,20
+Represents a collection of key-value paris( like a dictionary).
+Keys are unique, value can be duplicate.
 
