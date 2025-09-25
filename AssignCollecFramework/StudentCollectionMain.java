@@ -18,6 +18,15 @@ public class StudentCollectionMain {
         students1.add(new StudentCollectionSayan(3,"kate","english",95));
         students1.add(new StudentCollectionSayan(4,"ram","history",85));
         students1.add(new StudentCollectionSayan(1,"sayan","maths",90));
+//        remove duplicates without using HashSet()
+        List<StudentCollectionSayan> uniqueStudents1 = new ArrayList<>();
+        for(StudentCollectionSayan element : students1){//Iterate through original list students1
+            if(!uniqueStudents1.equals(element)){
+                 uniqueStudents1.add(element);
+            }
+        }
+        System.out.println("Unique student list without HashSet():" +uniqueStudents1);
+
 // remove duplicate using HashSet()
         Set<StudentCollectionSayan> uniqueStudents = new HashSet<>(students1);
         System.out.println("Unique student list: " +uniqueStudents);
@@ -30,6 +39,25 @@ public class StudentCollectionMain {
 // group the students by course using a Map<String , List<Student>>
         Map<String,List<StudentCollectionSayan>> studentByCourse = uniqueStudentList.stream().collect(Collectors.groupingBy(StudentCollectionSayan::getCourse));
         System.out.println("Student list by course:" +studentByCourse);
+
+//       group the students by course using a Map<String , List<Student>> without using stream()
+
+        Map<String, List<StudentCollectionSayan>> groupedStudent = new HashMap<>();
+        for(StudentCollectionSayan element : students1){//Iterate through original list students1
+             //String course = "";
+            if(!groupedStudent.containsKey(element)){
+//                StudentCollectionSayan obj = new StudentCollectionSayan(1,"sayan","maths", 95);
+                StudentCollectionSayan obj = new StudentCollectionSayan("maths");
+                String course = obj.getCourse();
+                groupedStudent.put(course,new ArrayList<>());
+                groupedStudent.get(course).add(element);
+            }
+
+        }
+
+        System.out.println("Grouped students without stream:" +groupedStudent);
+        System.out.println(groupedStudent.keySet());
+
 
 //        display name of the student who scored more than 75
         List<StudentCollectionSayan> studentlist = new ArrayList<>();

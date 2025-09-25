@@ -13,6 +13,9 @@ public class StudentCollectionSayan implements Comparable<StudentCollectionSayan
         this.course = course;
         this.marks = marks;
     }
+    public StudentCollectionSayan(String course){
+        this.course = course;
+    }
 
     public int getRollNumer() {
         return rollNumer;
