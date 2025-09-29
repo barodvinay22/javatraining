@@ -4,7 +4,7 @@ class Student {
     int marks;
 
     // Constructor with all fields
-    Student(int rollNumber, String name, int marks) {
+    Student(int rollNumber, String name, String bio, int marks) {
         this.rollNumber = rollNumber;
         this.name = name;
         this.marks = marks;
@@ -51,7 +51,7 @@ class Calculator {
 public class Main {
     public static void main(String[] args) {
 // Initializing students with different arguments
-        Student s1 = new Student(101, "Alice", 85);
+        Student s1 = new Student(101, "Alice", "Bio", 85);
         Student s2 = new Student(102, "Bob");
         Student s3 = new Student(103);
 
