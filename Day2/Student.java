@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Student {
     private Integer rollNumber;
     private String name;
